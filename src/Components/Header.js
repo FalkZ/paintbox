@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 
-import DropDownMenu from 'material-ui/DropDownMenu'
-import MenuItem from 'material-ui/MenuItem'
 import IconButton from 'material-ui/IconButton'
-import TextField from 'material-ui/TextField'
 import { Toolbar, ToolbarGroup, ToolbarSeparator, ToolbarTitle } from 'material-ui/Toolbar'
 import FontIcon from 'material-ui/FontIcon'
 import SettingsIcon from 'material-ui/svg-icons/action/settings'
@@ -16,12 +13,6 @@ export default class Header extends Component {
 		super(props)
 
 		this.state = {}
-	}
-
-	handleChange = (event, index, value) => this.setState({ value })
-
-	logChange(val) {
-		console.log('Selected: ' + JSON.stringify(val))
 	}
 
 	render() {
