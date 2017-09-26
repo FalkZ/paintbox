@@ -1,4 +1,1 @@
-# paintBOX
-
-## Color Template
 # paintbox

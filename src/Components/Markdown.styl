@@ -1,0 +1,91 @@
+.markdownhelper.markdownsection:before
+	background url('../Icons/arrange.svg') no-repeat center
+
+.markdown
+	margin 48px auto !important
+	width 740px
+	height 1046px
+	border 15px solid white
+	border-radius 4px
+	box-shadow 4px 5px 69px -17px rgba(0, 0, 0, .17)
+
+.markdownwrapper
+	padding 5px
+	box-shadow inset 1px 1px 5px 1px rgba(0, 0, 0, .05)
+
+.markdownsection
+	position relative
+	padding 5px
+	background-color white
+	box-shadow 1px 1px 5px 1px rgba(0, 0, 0, .05)
+
+	&:before
+		position absolute
+		top 0
+		right 0
+		float right
+		margin 0 -90px 0 0
+		width 10px
+		width 100px
+		height 100%
+		background-size contain
+		content ''
+
+	&:hover:before
+		background url('../Icons/arrange.svg') no-repeat center
+
+.markdownblock
+	// border-radius 4px
+	// display inherit
+	position relative
+	display inline-block
+	margin 0
+	padding 0
+	width 100%
+
+	&:before
+		position absolute
+		top 0
+		left 0
+		float left
+		margin 0 0 0 -90px
+		width 10px
+		width 100px
+		height 100%
+		background-size contain
+		content ''
+
+	&:hover:before
+		background url('../Icons/edit.svg') no-repeat center
+
+.markdowndrag
+	display inline-block
+	width 0
+
+	&:before
+		position absolute
+		top 0
+		right 0
+		float left
+		margin 0 -90px 0 0
+		width 10px
+		width 100px
+		height 100%
+		background-size contain
+		content ''
+
+	&:hover:before
+		background url('../Icons/arrange.svg') no-repeat center
+
+#cursor:before
+	display inline-block
+	overflow visible
+	width 3px !important
+	color #5871ef !important
+	content '|'
+	font-weight normal !important
+	animation blink 1s steps(1, start) infinite
+
+@keyframes blink
+	50%
+		opacity 0

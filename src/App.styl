@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons')
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700')
+
+@media print
+{
+    .Header, .Footer
+    {
+        display: none !important;
+    }
+    #markdown {
+      margin: 0 !important
+      width: 100% !important
+      border: 0 !important
+      //height: 100% !important
+      box-shadow none !important
+    }
+    .markdownwrapper, .markdownsection, body{
+      box-shadow none !important
+      padding: 0 !important
+    }
+    :before{
+      display: none !important;
+    }
+}
+
+iframe
+	position absolute
+	width 0
+	height 0
+	opacity 0

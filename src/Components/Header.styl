@@ -1,0 +1,51 @@
+@import "Colors";
+
+.Header
+	padding: 0 5% !important
+	position fixed
+	top 0
+	right 0
+	left 0
+	z-index 1
+	height auto !important
+	background-color #f7f7f7 !important // #1e2a63
+	box-shadow 0 0 8px 1px rgba(0, 0, 0, .3)
+
+	// padding-bottom 20px !important
+	.Title
+		font-weight bold
+		font-size 20px
+		font-family 'Lato', sans-serif
+
+		span
+			border 3px solid themecolor
+			border-radius 4px
+			display table
+			padding 0 4px
+			margin-left 4px
+			svg
+				display inline-block !important
+				margin-bottom -5px !important
+			div
+				display inline-block !important
+
+
+	*
+		color themecolor !important
+
+	textarea
+		display inline-block
+		padding-right 4px !important
+		padding-left 4px !important
+		height 1em
+		border-radius 4px
+		background-color lighten(themecolor, 20%) !important
+		resize none
+
+	.DropDownMenu
+		margin-top -4px
+
+		*
+			font-weight light
+			font-size 20px
+			font-family 'Lato', sans-serif
