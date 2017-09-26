@@ -2,5 +2,6 @@
 
 git add -A
 git commit -m 'update'
-git push -u origin master
-echo FalkZ
+git push -u origin master <<EOF
+FalkZ
+EOF
