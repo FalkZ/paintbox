@@ -18,7 +18,7 @@ export default class Paintbox extends Component {
 	}
 
 	fetchColors = () => {
-		fetch('https://raw.githubusercontent.com/FalkZ/paintbox/master/src/colors.json')
+		fetch('https://raw.githubusercontent.com/FalkZ/paintbox/master/colors.json')
 			.then(response => {
 				return response.json()
 			})
